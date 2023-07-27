@@ -7,7 +7,7 @@ import { renderToDom } from '@zardoy/react-util'
 function Model(props) {
     const group = useRef<ElementRef<'group'>>(null!)
     // Load model
-    const { nodes, materials } = useGLTF('/mac-draco.glb') as any
+    const { nodes, materials } = useGLTF('./mac-draco.glb') as any
     // Make it float
     useFrame(state => {
         const t = state.clock.getElapsedTime()
